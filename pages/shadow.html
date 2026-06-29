@@ -3,39 +3,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shadow - NUS PRODUCTIONS</title>
+<title>Shadow | NUS Productions</title>
 
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#0f0b1d;color:white;}
-.container{max-width:900px;margin:auto;padding:30px;}
-img{width:300px;border-radius:15px;display:block;margin:auto;}
-h1{text-align:center;color:#9d5cff;}
-.card{background:#1d1238;padding:20px;border-radius:15px;margin-top:20px;}
-a{color:#9d5cff;text-decoration:none;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d0d17;
+color:white;
+}
+
+header{
+background:#7c3aed;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+font-size:35px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.profile{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+}
+
+.profile img{
+width:350px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(124,58,237,.5);
+}
+
+.info{
+flex:1;
+}
+
+.info h2{
+font-size:32px;
+margin-bottom:15px;
+color:#a855f7;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+td{
+padding:12px;
+border-bottom:1px solid #333;
+}
+
+.story{
+margin-top:40px;
+background:#17172a;
+padding:25px;
+border-radius:20px;
+}
+
+.story h2{
+margin-bottom:15px;
+color:#a855f7;
+}
+
+.back{
+display:inline-block;
+margin-top:30px;
+padding:12px 25px;
+background:#7c3aed;
+border-radius:10px;
+color:white;
+text-decoration:none;
+}
 </style>
+
 </head>
 
 <body>
 
+<header>
+
+<h1>NUS PRODUCTIONS</h1>
+
+<div style="margin-top:15px;">
+
+<a href="../index.html" style="color:white;margin:0 15px;text-decoration:none;">Home</a>
+
+<a href="../index.html#characters" style="color:white;margin:0 15px;text-decoration:none;">Characters</a>
+
+<a href="../index.html#story" style="color:white;margin:0 15px;text-decoration:none;">Story</a>
+
+</div>
+
+</header>
+
 <div class="container">
 
-<h1>Shadow</h1>
+<div class="profile">
 
-<img src="../characters/shadow.png" alt="Shadow">
+<img src="../characters/shadow.png">
 
-<div class="card">
+<div class="info">
 
-<h2>Unknown</h2>
+<h2>Main Character</h2>
 
-<p><b>Crystal:</b> Unknown</p>
-<p><b>Role:</b> Unknown</p>
-<p><b>Weapon:</b> Unknown</p>
+<table>
+
+<tr>
+<td>Role</td>
+<td>Knight</td>
+</tr>
+
+<tr>
+<td>Crystal</td>
+<td>Crystal Merah</td>
+</tr>
+
+<tr>
+<td>Weapon</td>
+<td>Unknown</td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td>Main Character</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="story">
+
+<h2>Story</h2>
 
 <p>
-Shadow adalah karakter misterius dalam Cyber Story.
+Cyber adalah tokoh utama dalam Cyber Story yang dipilih oleh Crystal Merah untuk melindungi dunia dari ancaman iblis.
 </p>
-
-<p><a href="../index.html">⬅ Kembali ke Beranda</a></p>
 
 </div>
 
@@ -43,12 +163,12 @@ Shadow adalah karakter misterius dalam Cyber Story.
 
 <div style="display:flex;justify-content:space-between;margin-top:40px;">
 
-<a href="sylva.html" style="background:#7c3aed;color:white;padding:12px 20px;border-radius:10px;text-decoration:none;">
-⬅ Sylva
+<a href="../index.html" style="background:#7c3aed;color:white;padding:12px 20px;border-radius:10px;text-decoration:none;">
+🏠 Home
 </a>
 
-<a href="thanero.html" style="background:#7c3aed;color:white;padding:12px 20px;border-radius:10px;text-decoration:none;">
-Thanero ➜
+<a href="kael.html" style="background:#7c3aed;color:white;padding:12px 20px;border-radius:10px;text-decoration:none;">
+Next ➜ Kael
 </a>
 
 </div>
