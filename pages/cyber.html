@@ -117,8 +117,15 @@ line-height:1.8;
 
 .fill{
     height:100%;
-    background:#7c3aed;
+    background:linear-gradient(90deg,#7c3aed,#a855f7);
     border-radius:10px;
+    animation:loadBar 1.2s ease;
+}
+
+@keyframes loadBar{
+    from{
+        width:0;
+    }
 }
 
 </style>
