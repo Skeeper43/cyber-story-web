@@ -203,6 +203,13 @@ body{
     font-size:16px;
 }
 
+select{
+padding:10px;
+border-radius:10px;
+margin:20px;
+font-size:16px;
+}
+
 </style>
 </head>
 
@@ -267,7 +274,7 @@ body{
     <div class="card-container">
 	
 	<a href="pages/cyber.html" style="text-decoration:none;color:inherit;">
-	<div class="card" data-name="Cyber">
+	<div class="card" data-name="Cyber" data-type="hero">
     	<img src="characters/cyber.png?v=2" alt="Cyber">
 
     	<h3>Cyber</h3>
@@ -278,7 +285,7 @@ body{
 	</a>
 
         <a href="pages/kael.html" style="text-decoration:none;color:inherit;">
-    	<div class="card" data-name="Kael">
+    	<div class="card" data-name="Kael" data-type="hero">
         <img src="characters/kael.png" alt="Kael">
         <h3>Kael</h3>
         <p>Knight</p>
@@ -286,7 +293,7 @@ body{
 	</a>
 
         <a href="pages/ryden.html" style="text-decoration:none;color:inherit;">
-    	<div class="card" data-name="Ryden">
+    	<div class="card" data-name="Ryden"> data-type="hero">
         <img src="characters/ryden.png" alt="Ryden">
         <h3>Ryden</h3>
         <p>Ninja</p>
@@ -294,7 +301,7 @@ body{
 	</a>
 
         <a href="pages/sylva.html" style="text-decoration:none;color:inherit;">
-    	<div class="card" data-name="Sylva">
+    	<div class="card" data-name="Sylva" data-type="hero">
         <img src="characters/sylva.png" alt="Sylva">
         <h3>Sylva</h3>
         <p>Knight</p>
@@ -302,7 +309,7 @@ body{
 	</a>
 
         <a href="pages/shadow.html" style="text-decoration:none;color:inherit;">
-    	<div class="card" data-name="Shadow">
+    	<div class="card" data-name="Shadow" data-type="villain">
         <img src="characters/shadow.png" alt="Shadow">
         <h3>Shadow</h3>
         <p>Unknown</p>
@@ -310,7 +317,7 @@ body{
 	</a>
 
         <a href="pages/thanero.html" style="text-decoration:none;color:inherit;">
-    	<div class="card" data-name="Thanero">
+    	<div class="card" data-name="Thanero" data-type="villain">
         <img src="characters/thanero.png" alt="Thanero">
         <h3>Thanero</h3>
         <p>Warrior</p>
@@ -353,7 +360,37 @@ card.style.display="none";
 });
 
 }
+
+function filterCharacter(){
+
+let filter=document.getElementById("filter").value;
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+let type=card.dataset.type;
+
+if(!type) return;
+
+if(filter==="all" || type===filter){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
 </script>
+
+<select id="filter" onchange="filterCharacter()">
+    <option value="all">All</option>
+    <option value="hero">Hero</option>
+    <option value="villain">Villain</option>
+</select>
 
 </body>
 </html>
+
