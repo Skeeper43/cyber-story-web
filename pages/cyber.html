@@ -103,6 +103,24 @@ line-height:1.8;
     margin-bottom:15px;
 }
 
+.stat{
+    margin:18px 0;
+}
+
+.bar{
+    width:100%;
+    height:10px;
+    background:#333;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:#7c3aed;
+    border-radius:10px;
+}
+
 </style>
 
 </head>
@@ -173,13 +191,35 @@ Cyber adalah tokoh utama dalam Cyber Story yang dipilih oleh Crystal Merah untuk
 
 <h2 class="stats-title">Stats</h2>
 
-<div class="stats">
-    <p>⚔️ Attack : ★★★★★</p>
-    <p>🛡️ Defense : ★★★★☆</p>
-    <p>⚡ Speed : ★★★★★</p>
-    <p>🧠 Intelligence : ★★★★☆</p>
-    <p>💎 Origin Crystal : Red</p>
+<div class="stat">
+<p>⚔️ Attack</p>
+<div class="bar">
+<div class="fill" style="width:95%"></div>
 </div>
+</div>
+
+<div class="stat">
+<p>🛡️ Defense</p>
+<div class="bar">
+<div class="fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="stat">
+<p>⚡ Speed</p>
+<div class="bar">
+<div class="fill" style="width:98%"></div>
+</div>
+</div>
+
+<div class="stat">
+<p>🧠 Intelligence</p>
+<div class="bar">
+<div class="fill" style="width:80%"></div>
+</div>
+</div>
+
+<p><strong>💎 Origin Crystal:</strong> Red</p>
 
 </div>
 
