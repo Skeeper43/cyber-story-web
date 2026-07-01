@@ -277,6 +277,12 @@ footer p{
 
 <div class="search-box">
     <input type="text" id="search" placeholder="Search character..." onkeyup="searchCharacter()">
+
+    <select id="filter" onchange="filterCharacter()">
+    <option value="all">All</option>
+    <option value="hero">Hero</option>
+    <option value="villain">Villain</option>
+</select>
 </div>
 
 <section class="characters">
@@ -395,18 +401,12 @@ card.style.display="none";
 
 }
 
+</script>
+
 <footer>
     <p>© 2026 NUS Productions. All Rights Reserved.</p>
     <p>Creator of Cyber Story.</p>
 </footer>
-
-</script>
-
-<select id="filter" onchange="filterCharacter()">
-    <option value="all">All</option>
-    <option value="hero">Hero</option>
-    <option value="villain">Villain</option>
-</select>
 
 </body>
 </html>
