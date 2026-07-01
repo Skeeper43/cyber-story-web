@@ -457,7 +457,7 @@ const today = new Date();
 
 let year = today.getFullYear();
 
-let birthday = new Date(year,1,14); // 14 Februari
+let birthday = new Date(year,6,30); // 30 July
 
 if(today > birthday){
     birthday = new Date(year+1,1,14);
@@ -476,7 +476,7 @@ updateBirthdayCountdown();
 
 const now = new Date();
 
-if(now.getDate()==14 && now.getMonth()==1){
+if(now.getDate()==30 && now.getMonth()==6){
 
 document.getElementById("birthdayCountdown").innerHTML =
 "🎉 Happy Birthday Cyber!";
