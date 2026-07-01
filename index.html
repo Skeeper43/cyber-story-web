@@ -90,8 +90,8 @@ body{
 }
 
 .hero button{
-    margin-top:30px;
-    padding:15px 40px;
+    margin:30px 10px 0;
+    padding:15px 35px;
 
     background:#7d3cff;
 
@@ -106,11 +106,14 @@ body{
     cursor:pointer;
 
     transition:.3s;
+
+    box-shadow:0 0 15px rgba(125,60,255,.4);
 }
 
 .hero button:hover{
     background:#9a63ff;
-    transform:scale(1.05);
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(125,60,255,.8);
 }
 
 .project{
@@ -256,11 +259,17 @@ footer p{
 <section class="hero">
     <h1>NUS PRODUCTIONS</h1>
 
-    <p>Official Animation Studio</p>
+    <p>The Official Home of Cyber Story</p>
 
-    <h2>Creator of Cyber Story</h2>
+    <h2>Enter the world where the Origin Crystal chooses its hero.</h2>
 
-    <button>Explore</button>
+    <button onclick="location.href='pages/lore.html'">
+    Explore Story
+    </button>
+
+    <button onclick="document.getElementById('characters').scrollIntoView({behavior:'smooth'})">
+    Characters
+    </button>
 </section>
 
 <section class="project">
@@ -285,7 +294,7 @@ footer p{
 </select>
 </div>
 
-<section class="characters">
+<section id="characters" class="characters">
 
     <h2>Main Characters</h2>
 
