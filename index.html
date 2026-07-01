@@ -279,7 +279,7 @@ footer p{
     <h1>NUS PRODUCTIONS</h1>
 
     <p>The Official Home of Cyber Story</p>
-
+p
     <h2>Enter the world where the Origin Crystal chooses its hero.</h2>
 
     <button onclick="location.href='pages/lore.html'">
@@ -301,7 +301,13 @@ footer p{
 
 <p>📅 30 July</p>
 
+<p id="birthdayCountdown"></p>
+
 <p>Stay tuned for a special birthday animation!</p>
+
+<button id="birthdayButton" style="display:none;">
+Watch Special Animation
+</button>
 
 </div>
 
@@ -442,6 +448,43 @@ card.style.display="none";
 }
 
 });
+
+}
+
+function updateBirthdayCountdown(){
+
+const today = new Date();
+
+let year = today.getFullYear();
+
+let birthday = new Date(year,1,14); // 14 Februari
+
+if(today > birthday){
+    birthday = new Date(year+1,1,14);
+}
+
+const diff = birthday - today;
+
+const days = Math.ceil(diff/(1000*60*60*24));
+
+document.getElementById("birthdayCountdown").innerHTML =
+"⏳ "+days+" days left";
+
+}
+
+updateBirthdayCountdown();
+
+const now = new Date();
+
+if(now.getDate()==14 && now.getMonth()==1){
+
+document.getElementById("birthdayCountdown").innerHTML =
+"🎉 Happy Birthday Cyber!";
+}
+
+if(now.getDate()==14 && now.getMonth()==1){
+
+document.getElementById("birthdayButton").style.display="inline-block";
 
 }
 
