@@ -167,21 +167,49 @@ body{
 }
 
 .card{
-    width:200px;
+    width:220px;
     padding:20px;
-    background:white;
-    border-radius:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
-    transition:0.3s;
+    background:#17172a;
+    border:2px solid #7d3cff;
+    border-radius:18px;
+    box-shadow:0 0 15px rgba(125,60,255,.25);
+    transition:.3s;
+    color:white;
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 0 30px rgba(125,60,255,.6);
+}
+
+.card:hover img{
+    transform:scale(1.05);
 }
 
 .card h3{
-    color:#2b1464;
+    color:#a855f7;
+    margin:15px 0 10px;
+    font-size:24px;
+}
 
+.hero-badge,
+.villain-badge{
+    display:block;
+    width:fit-content;
+    padding:6px 14px;
+    margin:15px auto 0;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    color:white;
+}
+
+.hero-badge{
+    background:#22c55e;
+}
+
+.villain-badge{
+    background:#ef4444;
 }
 
 .card img{
@@ -190,6 +218,13 @@ body{
     object-fit:cover;
     display:block;
     border-radius:12px;
+    transition:.3s;
+}
+
+.card p{
+    margin:6px 0;
+    line-height:1.5;
+    font-size:14px;
 }
 
 .search-box{
@@ -279,7 +314,7 @@ footer p{
     <h1>NUS PRODUCTIONS</h1>
 
     <p>The Official Home of Cyber Story</p>
-p
+
     <h2>Enter the world where the Origin Crystal chooses its hero.</h2>
 
     <button onclick="location.href='pages/lore.html'">
@@ -347,7 +382,19 @@ Watch Special Animation
 
     	<h3>Cyber</h3>
 
-    	<p>Main Character</p>
+	<p><strong>Main Character</strong></p>
+
+	<p><strong>Role:</strong> Knight</p>
+
+	<p><strong>Age:</strong> 18</p>
+
+	<p><strong>Birthday:</strong> 30 July</p>
+
+	<p><strong>Crystal:</strong> Red</p>
+
+	<p><strong>Affiliation:</strong> Light Sky</p>
+
+	<p><strong>Hero</strong></p>
 	</div>
 	
 	</a>
@@ -356,7 +403,20 @@ Watch Special Animation
     	<div class="card" data-name="Kael" data-type="hero">
         <img src="characters/kael.png" alt="Kael">
         <h3>Kael</h3>
-        <p>Knight</p>
+
+<p><strong>Elite Knight</strong></p>
+
+<p><strong>Role:</strong> Knight</p>
+
+<p><strong>Age:</strong> 19</p>
+
+<p><strong>Birthday:</strong> 12 December</p>
+
+<p><strong>Crystal:</strong> Unknown</p>
+
+<p><strong>Affiliation:</strong> Silver knight</p>
+
+<p class="hero-badge">HERO</p>
     	</div>
 	</a>
 
@@ -364,7 +424,19 @@ Watch Special Animation
     	<div class="card" data-name="Ryden"> data-type="hero">
         <img src="characters/ryden.png" alt="Ryden">
         <h3>Ryden</h3>
-        <p>Ninja</p>
+<p><strong>Shadow ninja</strong></p>
+
+<p><strong>Role:</strong> Ninja</p>
+
+<p><strong>Age:</strong> 18</p>
+
+<p><strong>Birthday:</strong> 21 January</p>
+
+<p><strong>Crystal:</strong> Unknown</p>
+
+<p><strong>Affiliation:</strong> Ninjawa</p>
+
+<p class="hero-badge">HERO</p>
     	</div>
 	</a>
 
@@ -372,7 +444,19 @@ Watch Special Animation
     	<div class="card" data-name="Sylva" data-type="hero">
         <img src="characters/sylva.png" alt="Sylva">
         <h3>Sylva</h3>
-        <p>Knight</p>
+<p><strong>Nature guardian</strong></p>
+
+<p><strong>Role:</strong> Knight</p>
+
+<p><strong>Age:</strong> 23</p>
+
+<p><strong>Birthday:</strong> 1 January</p>
+
+<p><strong>Crystal:</strong> Unknown</p>
+
+<p><strong>Affiliation:</strong> Nature knight</p>
+
+<p class="hero-badge">HERO</p>
     	</div>
 	</a>
 
@@ -380,7 +464,19 @@ Watch Special Animation
     	<div class="card" data-name="Shadow" data-type="villain">
         <img src="characters/shadow.png" alt="Shadow">
         <h3>Shadow</h3>
-        <p>Unknown</p>
+<p><strong>Dark General</strong></p>
+
+<p><strong>Role:</strong> Unknown</p>
+
+<p><strong>Age:</strong> ???</p>
+
+<p><strong>Birthday:</strong> ???</p>
+
+<p><strong>Crystal:</strong> Black</p>
+
+<p><strong>Affiliation:</strong> Shadow</p>
+
+<p class="hero-badge">VILLAIN</p>
     	</div>
 	</a>
 
@@ -388,7 +484,19 @@ Watch Special Animation
     	<div class="card" data-name="Thanero" data-type="villain">
         <img src="characters/thanero.png" alt="Thanero">
         <h3>Thanero</h3>
-        <p>Warrior</p>
+<p><strong>Dark commander</strong></p>
+
+<p><strong>Role:</strong> Unknown</p>
+
+<p><strong>Age:</strong> 18</p>
+
+<p><strong>Birthday:</strong> 29 july</p>
+
+<p><strong>Crystal:</strong> Purple</p>
+
+<p><strong>Affiliation:</strong> Light Sky</p>
+
+<p class="hero-badge">VILLAIN</p>
     	</div>
 	</a>
 
